@@ -63,7 +63,6 @@ code {
 
 #experience-container {
     display: grid;
-    background-color: rgb(51, 49, 49);
 
     min-height: 1000px;
     min-width: 1000px;
@@ -91,8 +90,15 @@ code {
 }
 
 .title-cell {
+    max-width: 470px;
     text-align: right;
     color: #ffffff;
+}
+
+.description-cell {
+    max-width: 440px;
+    color: #ffffff;
+    padding-top: 2.5%;
 }
 
 .title-content {
