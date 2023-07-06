@@ -14,6 +14,10 @@ body {
     background-color: #121212;
 }
 
+header > p {
+    color: #adb5bd;
+}
+
 .active {
     background-color: #6200EE !important;
 }
