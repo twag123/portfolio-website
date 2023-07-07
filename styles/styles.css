@@ -37,8 +37,21 @@ code {
     color: #BB86FC;
 }
 
+#typing-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100%;
+}
+
 .heading-text {
     color: #ffffff !important;
+}
+
+.typed-cursor {
+    padding-left: 5px;
+    color: white;
+    font-size: 34px;
 }
 
 .heading-desc {
