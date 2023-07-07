@@ -50,10 +50,14 @@ code {
 
 }
 
-#experience-heading {
+.section-heading {
     color: white;
     width: 25%;
     text-align: center;
+}
+
+#project-heading {
+    width: 10%;
 }
 
 #centering {
@@ -71,7 +75,7 @@ code {
 
     grid-template-columns: 8fr 1fr 8fr;
     grid-template-rows: 1fr 1fr;
-    gap: 10px;
+    gap: 0;
 }
 
 #line-cell {
@@ -94,6 +98,7 @@ code {
 
 .title-cell {
     max-width: 470px;
+    max-height: 400px;
     text-align: right;
     color: #ffffff;
 
@@ -104,6 +109,7 @@ code {
 
 .description-cell {
     max-width: 440px;
+    max-height: 400px;
     color: #ffffff;
     padding-top: 2.5%;
 
@@ -131,6 +137,8 @@ code {
 
 #project-album {
     background-color: transparent !important;
+    min-height: 800px;
+
 }
 
 .card {
@@ -148,6 +156,14 @@ code {
 
 .featurette-image {
     border-radius: 2% 2% 0 0;
+}
+
+footer span {
+    color: #adb5bd !important;
+}
+
+li > svg {
+    background-color: white !important;
 }
 
 
@@ -169,9 +185,13 @@ code {
         height: 100%;
     }
 
-    #experience-heading {
-        width: 90%;
+    .section-heading {
+        width: 80%;
         text-align: center;
+    }
+
+    #project-heading {
+        width: 30%;
     }
 
     #experience-container {
