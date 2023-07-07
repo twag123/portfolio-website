@@ -129,6 +129,27 @@ code {
     border-radius: 4%;
 }
 
+#project-album {
+    background-color: transparent !important;
+}
+
+.card {
+    background-color: #222222 !important;
+    color: #adb5bd;
+}
+
+.view-button {
+    color: #adb5bd;
+}
+
+.view-button:hover {
+    background-color: #6200EE;
+}
+
+.featurette-image {
+    border-radius: 2% 2% 0 0;
+}
+
 
 
 @media (min-width: 319px) and (max-width: 480px) {
