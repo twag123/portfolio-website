@@ -1,11 +1,48 @@
-// Change styling of nav bar active button when pressed
-$(".nav-link").on('click', function () {
-    $(".nav-link").removeClass("active");
-    $(this).toggleClass("active");
-});
 
 
-// Scroll to the top of page when clicked
-$("#home").on('click', function () {
-    $('html.body').animate({ scrollTop: 0 }, 'fast');
-});
+$(window).scroll( function () {
+    var windScroll = $(window).scrollTop();
+    var home = $('#home').offset().top - 50;
+    var experience = $('#experience').offset().top - 50;
+    var projects = $('#projects').offset().top - 50;
+    var contact_me = $('#contact-me').offset().top - 900;
+
+    if (windScroll >= home) {
+        $('#home-btn').addClass('active');
+
+        $('#experience-btn').removeClass('active');
+        $('#projects-btn').removeClass('active');
+        $('#contact-btn').removeClass('active');
+    }
+
+    if (windScroll >= experience) {
+        $('#experience-btn').addClass('active');
+
+        $('#home-btn').removeClass('active');
+        $('#projects-btn').removeClass('active');
+        $('#contact-btn').removeClass('active');
+    } else {
+        $('experience-btn').removeClass('active');
+    }
+
+    if (windScroll >= projects) {
+        $('#projects-btn').addClass('active');
+
+        $('#home-btn').removeClass('active');
+        $('#experience-btn').removeClass('active');
+        $('#contact-btn').removeClass('active');
+    } else {
+        $('#projects-btn').removeClass('active');
+    }
+
+    if (windScroll >= contact_me) {
+        $('#contact-btn').addClass('active');
+
+        $('#home-btn').removeClass('active');
+        $('#experience-btn').removeClass('active');
+        $('#projects-btn').removeClass('active');
+    } else {
+        $('contact-btn').removeClass('active');
+    }
+
+}).scroll();

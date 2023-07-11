@@ -17,19 +17,20 @@
           <p class="fs-5 d-flex mb-3 mb-md-0 me-md-auto text-decoration-none" id="name-heading">Tyler Wagner</p>
     
           <ul class="nav nav-pills">
-            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-            <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
-            <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-            <li class="nav-item"><a href="#contact-me" class="nav-link">Contact Me</a></li>
+            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page" id="home-btn">Home</a></li>
+            <li class="nav-item"><a href="#experience" class="nav-link" id="experience-btn">Experience</a></li>
+            <li class="nav-item"><a href="#projects" class="nav-link" id="projects-btn">Projects</a></li>
+            <li class="nav-item"><a href="#contact-me" class="nav-link" id="contact-btn">Contact Me</a></li>
           </ul>
         </header>
       </div>
 
-    <div class="mb-5">
-        <div class="p-5 text-center jumbotron-head d-flex align-items-center">
-          <div class="container mt-5 py-5">
+    <div id="home"></div>
 
-            <div id="typing-container">
+    <div class="mb-5">
+        <div class="p-5 text-center jumbotron-head d-flex align-items-center justify-content-center">
+          <div class="container mt-5 py-5" id="typing-container">
+            <div>
               <span class="text-body-emphasis heading-text" id="typed-heading"></span>
               <span id="typed-subheading"></span>
             </div>
@@ -38,14 +39,14 @@
       </div>
 
 
-    <div class="mb-md-5 pb-md-5 mb-xl-0 pb-xl-0 d-flex justify-content-center" id="experience">
+    <div class="mb-sm-5 pb-sm-5 mb-md-0 pb-md-0 d-flex justify-content-center" id="experience">
       <h1 class="border-bottom pb-2 mb-5 section-heading">Professional Experience</h1>
     </div>
 
 
     <div class="mb-5 pb-5" id="centering">
 
-        <div id="experience-container" class="pt-md-5 mt-md-5 pt-xl-0 mt-xl-0">
+        <div id="experience-container" class="pt-sm-5 mt-sm-5 pt-md-0 mt-md-0">
 
 
             <div class="title-cell" id="title-1" role="button"> 
@@ -72,8 +73,8 @@
         </div>
     </div>
 
-    <div class="mb-0 pb-0 py-5 my-5 d-flex justify-content-center" id="projects">
-        <h1 class="border-bottom pb-2 mb-5 section-heading" id="project-heading">Projects</h1>
+    <div class="mb-0 pb-0 mt-5 pt-5 d-flex justify-content-center" id="projects">
+        <h1 class="border-bottom pt-5 mt-5 pb-2 section-heading" id="project-heading">Projects</h1>
     </div>
 
 
@@ -88,8 +89,7 @@
                 <div class="card-body">
                   <p class="card-text">Windows Automated General Servitor (WAGS) is a virtual voice assistant that provides access to some of the basic functions of a Windows computer.</p>
                   <div class="d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn btn-sm btn-outline-secondary view-button">View GitHub Repo</button>
-                    <small class="text-body-secondary">9 mins</small>
+                    <a type="button" class="btn btn-sm btn-outline-secondary view-button" href="https://github.com/twag123/Windows-Automated-General-Servitor">View GitHub Repo</a>
                   </div>
                 </div>
               </div>
@@ -101,8 +101,7 @@
                 <div class="card-body">
                   <p class="card-text">A time clock system used to manage and track employee shift times. Currently in use by three departments at Truman State University.</p>
                   <div class="d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn btn-sm btn-outline-secondary view-button">View GitHub Repo</button>
-                    <small class="text-body-secondary">9 mins</small>
+                    <a type="button" class="btn btn-sm btn-outline-secondary view-button" href="https://github.com/twag123/Time-Clock-System">View GitHub Repo</a>
                   </div>
                 </div>
               </div>
@@ -114,8 +113,7 @@
                 <div class="card-body">
                   <p class="card-text">A locker retnal management system specifically designed for Truman State's Union and Invovlement Services.</p>
                   <div class="d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn btn-sm btn-outline-secondary view-button">View GitHub Repo</button>
-                    <small class="text-body-secondary">9 mins</small>
+                    <a type="button" class="btn btn-sm btn-outline-secondary view-button" href="https://github.com/twag123">View GitHub Repo</a>
                   </div>
                 </div>
               </div>
