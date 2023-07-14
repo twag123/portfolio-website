@@ -3,7 +3,7 @@
 $(window).scroll( function () {
     var windScroll = $(window).scrollTop();
     var home = $('#home').offset().top - 50;
-    var experience = $('#experience').offset().top - 50;
+    var experience = $('#experience').offset().top - 200;
     var projects = $('#projects').offset().top - 50;
     var contact_me = $('#contact-me').offset().top - 900;
 

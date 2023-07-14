@@ -62,12 +62,12 @@ code {
 
 .section-heading {
     color: white;
-    width: 25%;
+    width: 40%;
     text-align: center;
 }
 
 #project-heading {
-    width: 10%;
+    width: 15%;
 }
 
 #experience {
@@ -95,7 +95,7 @@ code {
 #line-cell {
     display: flex;
     justify-content: center;
-    grid-row: span 2;
+    grid-row: span 3;
     align-items: center;
 
     padding-top: 10%;
@@ -184,7 +184,7 @@ li > svg {
 
 
 
-@media (min-width: 319px) and (max-width: 480px) {
+@media (min-width: 319px) and (max-width: 768px) {
 
     #name-heading {
         display: none !important;
@@ -208,7 +208,7 @@ li > svg {
     }
 
     .section-heading {
-        width: 80%;
+        width: 70%;
         text-align: center;
     }
 
@@ -263,6 +263,4 @@ li > svg {
         text-align: center;
         padding-bottom: 250px;
     }
-
-
 }
