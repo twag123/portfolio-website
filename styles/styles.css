@@ -45,6 +45,11 @@ code {
     color: #ffffff !important;
 }
 
+.type-body {
+    height: 50px;
+    padding: 5px;
+}
+
 .typed-cursor {
     padding-left: 5px;
     color: white;
@@ -62,7 +67,7 @@ code {
 
 .section-heading {
     color: white;
-    width: 40%;
+    width: 35%;
     text-align: center;
 }
 
