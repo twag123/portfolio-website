@@ -4,7 +4,7 @@ $(window).scroll( function () {
     var windScroll = $(window).scrollTop();
     var home = $('#home').offset().top - 50;
     var experience = $('#experience').offset().top - 200;
-    var projects = $('#projects').offset().top - 50;
+    var projects = $('#projects').offset().top - 175;
     var contact_me = $('#contact-me').offset().top - 900;
 
     if (windScroll >= home) {
@@ -46,3 +46,33 @@ $(window).scroll( function () {
     }
 
 }).scroll();
+ 
+ 
+ const elementInView = (el, percentageScroll = 80) => {
+    const elementTop = el[0].getBoundingClientRect().top;
+    return (
+      elementTop <=
+      ((window.innerHeight || document.documentElement.clientHeight) * (percentageScroll/100))
+    );
+  };
+ 
+ 
+ const displayScrollElement = (element) => {
+    //element.removeClass("js-scroll");
+    element.addClass("scrolled");
+ };
+ 
+ 
+ const handleScrollAnimation = () => {
+    $('.js-scroll').each( function(i) {
+      if (elementInView(($(this)))) {
+        displayScrollElement($(this));
+      }
+    })
+  };
+ 
+ 
+  window.addEventListener('scroll', () => {
+    handleScrollAnimation();
+  });
+ 
