@@ -1,5 +1,6 @@
 html {
     height: 100%;
+    background-color: rgba(0, 0, 0, 0.93);
 }
 
 body {
@@ -272,15 +273,17 @@ li > svg {
     .title-cell {
         text-align: center;
         height: 100%;
+
+        padding-bottom: 0 !important;
     }
 
     #title-1 {
         text-align: center;
-        padding-bottom: 100px;
+        padding-bottom: 50px !important;
     }
 
     #title-2 {
         text-align: center;
-        padding-bottom: 250px;
+        margin-bottom: 100px !important;
     }
 }
